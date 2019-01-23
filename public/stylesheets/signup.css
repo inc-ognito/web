@@ -1,0 +1,94 @@
+
+.navbar-brand{
+	cursor: pointer;
+}
+
+.mainpp{
+	height: 93vh;
+	border-radius: 0 0 30% 0;
+	background-color: white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white;
+    background-color: #343a40;
+}
+a{
+	color: #343a40
+}
+a:hover{
+	color:#343a40;
+}
+.kiitians{
+	color:#343a40;
+	font-size: 7vw;
+	font-family: Gill Sans;
+}
+.fa-star{
+	font-size: x-large;
+	margin-left: 10px;
+	color: orange;
+}
+.fa-star-half-alt{
+	font-size: x-large;
+	margin-left: 10px;
+	color: orange;
+}
+
+.message{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: white;
+	padding: 30px 10px 30px 10px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: large;
+}
+hr{
+	border-color: white;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+.roundimg{
+	border-radius: 50%;
+}
+.next{
+	color: white;
+	font-size: xx-large;
+}
+.next:hover{
+	color: black;
+}
+@-webkit-keyframes key1{
+	0% {}
+	100% {
+		background-color: #343a40;
+		color: white;
+		cursor: pointer;
+	}
+}
+
+.friend{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+}
+.friend:hover{
+	-webkit-animation-name: key1;
+	-webkit-animation-duration: 0.3s;
+	-webkit-animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+input[type="file"] {
+    width: 99%
+}
+.backcol:focus{
+	background-color: #343a40;
+	color: white;
+}

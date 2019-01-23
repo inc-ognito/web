@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to inc-ognito</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/signup.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark">
+	  	<span class="navbar-brand mb-0 h1" style="font-weight: bold;"><i class="fas fa-user-secret" style="font-size: xx-large;margin-right: 15px;"></i>Inc-ognito</span>
+	  	<span class="navbar-text" style="color: white">
+	      Stay Anonymous.
+	    </span>
+	</nav>
+
+
+
+
+
+<div class="container">
+<div class="row">
+	<div class="col-lg-3 col-md-3 col-sm-2"></div>
+	<div class="col-lg-6 col-md-6 col-sm-8">
+
+		<div style="margin-top: 20%; text-align: center;font-size: x-large;margin-bottom: 10%;">
+			Enter the OTP to verify your account.
+		</div>
+	<form action="/verify/<%= id %>" method="post">
+		<div class="input-group mb-3">
+		  <input type="number" required class="form-control" placeholder="Enter OTP" id="otp" name="verify" onkeyup="checkotp();">
+		  <div class="input-group-append">
+		    <button class="btn btn-outline-secondary" disabled="true" type="submit" name="sub" id="button-addon2">Submit</button>
+		  </div>
+		</div>
+	</form>
+
+	</div>
+	<div class="col-lg-3 col-md-3 col-sm-2"></div>
+</div>
+</div>
+
+
+
+
+<script type="text/javascript">
+	function checkotp(){
+		var x = document.getElementById("otp").value;
+		if(x.length===4){
+			document.getElementById("button-addon2").disabled=false;
+		}
+		else{
+			document.getElementById("button-addon2").disabled=true;
+		}
+	}
+</script>
+</body>
+</html>
