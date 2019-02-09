@@ -394,7 +394,7 @@ app.post('/verify/:id',isnotLoggedIn,function(req,res){
     }
   });
     });
-app.listen("process.env.PORT||3000",()=>{
+app.listen(process.env.PORT||3000,()=>{
 	console.log("Server Started");
 });
 function isLoggedIn(req, res, next){
