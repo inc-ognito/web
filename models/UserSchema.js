@@ -1,7 +1,7 @@
-var mongoose = require("mongoose");
-var passportLocalMongoose = require("passport-local-mongoose");
+const mongoose = require("mongoose"),
+ passportLocalMongoose = require("passport-local-mongoose"),
 
-var UserSchema = new mongoose.Schema({
+     UserSchema = new mongoose.Schema({
 	username:{type:Number,required:true,min:1000000,max:9999999,index:{unique:true}},
 	roll:String,
     firstname:{type:String,required:true},
