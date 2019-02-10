@@ -5,9 +5,9 @@ const express     = require("express"),
     mongoose    = require("mongoose"),
     passport    = require("passport"),
     LocalStrategy = require("passport-local"),
-    User        = require("./models/User"),
-    Comment        = require("./models/Comment"),
-    Rating=require("./models/Rating"),
+    User        = require("./models/UserSchema"),
+    Comment        = require("./models/CommentSchema"),
+    Rating=require("./models/RatingSchema"),
     cookieParser = require('cookie-parser'),
     multer = require('multer');
     const fileFilter=(req,file,cb)=>{
